@@ -8,12 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		11635CDE1FEBC41300269622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11635CDD1FEBC41300269622 /* AppDelegate.swift */; };
-		11635CE01FEBC41300269622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11635CDF1FEBC41300269622 /* ViewController.swift */; };
+		11635CE01FEBC41300269622 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11635CDF1FEBC41300269622 /* MainViewController.swift */; };
 		11635CE31FEBC41300269622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11635CE11FEBC41300269622 /* Main.storyboard */; };
 		11635CE51FEBC41300269622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11635CE41FEBC41300269622 /* Assets.xcassets */; };
 		11635CE81FEBC41300269622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11635CE61FEBC41300269622 /* LaunchScreen.storyboard */; };
 		11635CF31FEBC41400269622 /* native_ios_matthiasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11635CF21FEBC41400269622 /* native_ios_matthiasTests.swift */; };
 		11635CFE1FEBC41400269622 /* native_ios_matthiasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11635CFD1FEBC41400269622 /* native_ios_matthiasUITests.swift */; };
+		11AE89491FEBDD83002D4019 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89481FEBDD83002D4019 /* Currency.swift */; };
+		11AE894E1FEBF9D0002D4019 /* CryptocurrencyPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE894D1FEBF9D0002D4019 /* CryptocurrencyPriceService.swift */; };
+		11AE89501FEBFE01002D4019 /* CryptoPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE894F1FEBFE01002D4019 /* CryptoPrice.swift */; };
+		11AE89521FED002A002D4019 /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89511FED002A002D4019 /* CryptoCell.swift */; };
+		11AE89541FED0066002D4019 /* CryptoCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89531FED0066002D4019 /* CryptoCoin.swift */; };
+		11AE89561FED0144002D4019 /* CryptocompareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89551FED0144002D4019 /* CryptocompareService.swift */; };
+		11AE89581FED0BCD002D4019 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89571FED0BCD002D4019 /* CoinViewController.swift */; };
+		11AE895A1FED2E44002D4019 /* CoinDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89591FED2E44002D4019 /* CoinDetailViewController.swift */; };
+		11AE895D1FED6B44002D4019 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE895C1FED6B44002D4019 /* Extensions.swift */; };
+		11AE89611FEE5874002D4019 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89601FEE5874002D4019 /* GraphViewController.swift */; };
+		11AE89631FEE5B29002D4019 /* CoinDetailTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89621FEE5B29002D4019 /* CoinDetailTabController.swift */; };
+		11AE89651FEE74A5002D4019 /* ChartBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89641FEE74A5002D4019 /* ChartBaseViewController.swift */; };
+		11AE89671FEE95D9002D4019 /* CryptoCompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89661FEE95D9002D4019 /* CryptoCompareViewController.swift */; };
+		11AE896B1FEEB757002D4019 /* IntroCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE896A1FEEB757002D4019 /* IntroCollectionViewController.swift */; };
+		11AE896D1FEEBBF2002D4019 /* IntroGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE896C1FEEBBF2002D4019 /* IntroGridCell.swift */; };
+		11AE896F1FEEC649002D4019 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE896E1FEEC649002D4019 /* Category.swift */; };
+		11AE89711FEED470002D4019 /* RadioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89701FEED470002D4019 /* RadioPlayerViewController.swift */; };
+		11AE89731FEFA636002D4019 /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89721FEFA636002D4019 /* RadioStation.swift */; };
+		11AE89751FEFA994002D4019 /* RadioStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89741FEFA994002D4019 /* RadioStationViewController.swift */; };
+		11AE89771FEFAB09002D4019 /* RadioStationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89761FEFAB09002D4019 /* RadioStationCell.swift */; };
+		11AE89791FEFADC4002D4019 /* RadioSplitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE89781FEFADC4002D4019 /* RadioSplitController.swift */; };
+		11AE897B1FF53E9C002D4019 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE897A1FF53E9C002D4019 /* MapViewController.swift */; };
+		11AE897D1FF545D6002D4019 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AE897C1FF545D6002D4019 /* CoreLocation.framework */; };
+		78DA65ADEAC34064E9A71D20 /* Pods_native_ios_matthias.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3BB5541E744ED22A8AAC85 /* Pods_native_ios_matthias.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +60,7 @@
 /* Begin PBXFileReference section */
 		11635CDA1FEBC41300269622 /* native-ios-matthias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "native-ios-matthias.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11635CDD1FEBC41300269622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11635CDF1FEBC41300269622 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11635CDF1FEBC41300269622 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		11635CE21FEBC41300269622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11635CE41FEBC41300269622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11635CE71FEBC41300269622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +71,32 @@
 		11635CF91FEBC41400269622 /* native-ios-matthiasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "native-ios-matthiasUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11635CFD1FEBC41400269622 /* native_ios_matthiasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = native_ios_matthiasUITests.swift; sourceTree = "<group>"; };
 		11635CFF1FEBC41400269622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AE89481FEBDD83002D4019 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		11AE894D1FEBF9D0002D4019 /* CryptocurrencyPriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptocurrencyPriceService.swift; sourceTree = "<group>"; };
+		11AE894F1FEBFE01002D4019 /* CryptoPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPrice.swift; sourceTree = "<group>"; };
+		11AE89511FED002A002D4019 /* CryptoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCell.swift; sourceTree = "<group>"; };
+		11AE89531FED0066002D4019 /* CryptoCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCoin.swift; sourceTree = "<group>"; };
+		11AE89551FED0144002D4019 /* CryptocompareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptocompareService.swift; sourceTree = "<group>"; };
+		11AE89571FED0BCD002D4019 /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
+		11AE89591FED2E44002D4019 /* CoinDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailViewController.swift; sourceTree = "<group>"; };
+		11AE895C1FED6B44002D4019 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		11AE89601FEE5874002D4019 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		11AE89621FEE5B29002D4019 /* CoinDetailTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailTabController.swift; sourceTree = "<group>"; };
+		11AE89641FEE74A5002D4019 /* ChartBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartBaseViewController.swift; sourceTree = "<group>"; };
+		11AE89661FEE95D9002D4019 /* CryptoCompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCompareViewController.swift; sourceTree = "<group>"; };
+		11AE896A1FEEB757002D4019 /* IntroCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroCollectionViewController.swift; sourceTree = "<group>"; };
+		11AE896C1FEEBBF2002D4019 /* IntroGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroGridCell.swift; sourceTree = "<group>"; };
+		11AE896E1FEEC649002D4019 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		11AE89701FEED470002D4019 /* RadioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayerViewController.swift; sourceTree = "<group>"; };
+		11AE89721FEFA636002D4019 /* RadioStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
+		11AE89741FEFA994002D4019 /* RadioStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationViewController.swift; sourceTree = "<group>"; };
+		11AE89761FEFAB09002D4019 /* RadioStationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationCell.swift; sourceTree = "<group>"; };
+		11AE89781FEFADC4002D4019 /* RadioSplitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioSplitController.swift; sourceTree = "<group>"; };
+		11AE897A1FF53E9C002D4019 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		11AE897C1FF545D6002D4019 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4D21B9AEBB964C78C4F8BC60 /* Pods-native-ios-matthias.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native-ios-matthias.debug.xcconfig"; path = "Pods/Target Support Files/Pods-native-ios-matthias/Pods-native-ios-matthias.debug.xcconfig"; sourceTree = "<group>"; };
+		61F97505DDB7327F75659F08 /* Pods-native-ios-matthias.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native-ios-matthias.release.xcconfig"; path = "Pods/Target Support Files/Pods-native-ios-matthias/Pods-native-ios-matthias.release.xcconfig"; sourceTree = "<group>"; };
+		BB3BB5541E744ED22A8AAC85 /* Pods_native_ios_matthias.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_native_ios_matthias.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AE897D1FF545D6002D4019 /* CoreLocation.framework in Frameworks */,
+				78DA65ADEAC34064E9A71D20 /* Pods_native_ios_matthias.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +133,8 @@
 				11635CF11FEBC41400269622 /* native-ios-matthiasTests */,
 				11635CFC1FEBC41400269622 /* native-ios-matthiasUITests */,
 				11635CDB1FEBC41300269622 /* Products */,
+				8A15BD589F5DDE888104D85D /* Pods */,
+				86379F3C539AD315BE3CE5CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +151,16 @@
 		11635CDC1FEBC41300269622 /* native-ios-matthias */ = {
 			isa = PBXGroup;
 			children = (
+				11AE894C1FEBF963002D4019 /* Services */,
+				11635D0D1FEBD42F00269622 /* ViewControllers */,
+				11635D0C1FEBD42600269622 /* Views */,
+				11635D0B1FEBD3FA00269622 /* Model */,
 				11635CDD1FEBC41300269622 /* AppDelegate.swift */,
-				11635CDF1FEBC41300269622 /* ViewController.swift */,
 				11635CE11FEBC41300269622 /* Main.storyboard */,
 				11635CE41FEBC41300269622 /* Assets.xcassets */,
 				11635CE61FEBC41300269622 /* LaunchScreen.storyboard */,
 				11635CE91FEBC41300269622 /* Info.plist */,
+				11AE895C1FED6B44002D4019 /* Extensions.swift */,
 			);
 			path = "native-ios-matthias";
 			sourceTree = "<group>";
@@ -125,6 +183,74 @@
 			path = "native-ios-matthiasUITests";
 			sourceTree = "<group>";
 		};
+		11635D0B1FEBD3FA00269622 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11AE89481FEBDD83002D4019 /* Currency.swift */,
+				11AE894F1FEBFE01002D4019 /* CryptoPrice.swift */,
+				11AE89531FED0066002D4019 /* CryptoCoin.swift */,
+				11AE896E1FEEC649002D4019 /* Category.swift */,
+				11AE89721FEFA636002D4019 /* RadioStation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11635D0C1FEBD42600269622 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11AE89511FED002A002D4019 /* CryptoCell.swift */,
+				11AE896C1FEEBBF2002D4019 /* IntroGridCell.swift */,
+				11AE89761FEFAB09002D4019 /* RadioStationCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11635D0D1FEBD42F00269622 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				11635CDF1FEBC41300269622 /* MainViewController.swift */,
+				11AE89571FED0BCD002D4019 /* CoinViewController.swift */,
+				11AE89591FED2E44002D4019 /* CoinDetailViewController.swift */,
+				11AE89601FEE5874002D4019 /* GraphViewController.swift */,
+				11AE89621FEE5B29002D4019 /* CoinDetailTabController.swift */,
+				11AE89641FEE74A5002D4019 /* ChartBaseViewController.swift */,
+				11AE89661FEE95D9002D4019 /* CryptoCompareViewController.swift */,
+				11AE896A1FEEB757002D4019 /* IntroCollectionViewController.swift */,
+				11AE89701FEED470002D4019 /* RadioPlayerViewController.swift */,
+				11AE89741FEFA994002D4019 /* RadioStationViewController.swift */,
+				11AE89781FEFADC4002D4019 /* RadioSplitController.swift */,
+				11AE897A1FF53E9C002D4019 /* MapViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		11AE894C1FEBF963002D4019 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				11AE894D1FEBF9D0002D4019 /* CryptocurrencyPriceService.swift */,
+				11AE89551FED0144002D4019 /* CryptocompareService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		86379F3C539AD315BE3CE5CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11AE897C1FF545D6002D4019 /* CoreLocation.framework */,
+				BB3BB5541E744ED22A8AAC85 /* Pods_native_ios_matthias.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A15BD589F5DDE888104D85D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D21B9AEBB964C78C4F8BC60 /* Pods-native-ios-matthias.debug.xcconfig */,
+				61F97505DDB7327F75659F08 /* Pods-native-ios-matthias.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11635D021FEBC41400269622 /* Build configuration list for PBXNativeTarget "native-ios-matthias" */;
 			buildPhases = (
+				A37E81D706FD88AD7AF75D61 /* [CP] Check Pods Manifest.lock */,
 				11635CD61FEBC41300269622 /* Sources */,
 				11635CD71FEBC41300269622 /* Frameworks */,
 				11635CD81FEBC41300269622 /* Resources */,
+				BFB04BB112041C0F3D7B5B04 /* [CP] Embed Pods Frameworks */,
+				B3C75FB724074B366E75D8F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +323,11 @@
 					11635CD91FEBC41300269622 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					11635CED1FEBC41400269622 = {
 						CreatedOnToolsVersion = 9.2;
@@ -254,12 +388,96 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A37E81D706FD88AD7AF75D61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-native-ios-matthias-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3C75FB724074B366E75D8F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-native-ios-matthias/Pods-native-ios-matthias-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFB04BB112041C0F3D7B5B04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-native-ios-matthias/Pods-native-ios-matthias-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-native-ios-matthias/Pods-native-ios-matthias-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11635CD61FEBC41300269622 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11635CE01FEBC41300269622 /* ViewController.swift in Sources */,
+				11AE89751FEFA994002D4019 /* RadioStationViewController.swift in Sources */,
+				11AE89501FEBFE01002D4019 /* CryptoPrice.swift in Sources */,
+				11AE89631FEE5B29002D4019 /* CoinDetailTabController.swift in Sources */,
+				11AE89711FEED470002D4019 /* RadioPlayerViewController.swift in Sources */,
+				11AE89491FEBDD83002D4019 /* Currency.swift in Sources */,
+				11AE89521FED002A002D4019 /* CryptoCell.swift in Sources */,
+				11AE89581FED0BCD002D4019 /* CoinViewController.swift in Sources */,
+				11AE897B1FF53E9C002D4019 /* MapViewController.swift in Sources */,
+				11AE896F1FEEC649002D4019 /* Category.swift in Sources */,
+				11AE89671FEE95D9002D4019 /* CryptoCompareViewController.swift in Sources */,
+				11AE89791FEFADC4002D4019 /* RadioSplitController.swift in Sources */,
+				11AE895A1FED2E44002D4019 /* CoinDetailViewController.swift in Sources */,
+				11AE89541FED0066002D4019 /* CryptoCoin.swift in Sources */,
+				11635CE01FEBC41300269622 /* MainViewController.swift in Sources */,
+				11AE894E1FEBF9D0002D4019 /* CryptocurrencyPriceService.swift in Sources */,
+				11AE89561FED0144002D4019 /* CryptocompareService.swift in Sources */,
+				11AE89611FEE5874002D4019 /* GraphViewController.swift in Sources */,
+				11AE895D1FED6B44002D4019 /* Extensions.swift in Sources */,
+				11AE89771FEFAB09002D4019 /* RadioStationCell.swift in Sources */,
+				11AE896D1FEEBBF2002D4019 /* IntroGridCell.swift in Sources */,
+				11AE896B1FEEB757002D4019 /* IntroCollectionViewController.swift in Sources */,
+				11AE89651FEE74A5002D4019 /* ChartBaseViewController.swift in Sources */,
+				11AE89731FEFA636002D4019 /* RadioStation.swift in Sources */,
 				11635CDE1FEBC41300269622 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,9 +642,11 @@
 		};
 		11635D031FEBC41400269622 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D21B9AEBB964C78C4F8BC60 /* Pods-native-ios-matthias.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "native-ios-matthias/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "be.voom.matthias.native-ios-matthias";
@@ -438,9 +658,11 @@
 		};
 		11635D041FEBC41400269622 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F97505DDB7327F75659F08 /* Pods-native-ios-matthias.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "native-ios-matthias/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "be.voom.matthias.native-ios-matthias";
