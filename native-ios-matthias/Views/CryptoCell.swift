@@ -20,7 +20,6 @@ class CryptoCell: UITableViewCell {
     
     var name : String! {
     didSet {
-        //print(name)
         if name != nil {
             nameLabel.text = name
         }

@@ -17,6 +17,7 @@ class CoinDetailViewController: CryptoCompareViewController{
     var cryptoCoin : CryptoCoin!
     @IBOutlet weak var eurPrice: UILabel!
     @IBOutlet weak var usdPrice: UILabel!
+    @IBOutlet weak var coinImage: UIImageView!
     
     
     override func viewDidLoad() {
@@ -29,6 +30,7 @@ class CoinDetailViewController: CryptoCompareViewController{
         
         if let name = cryptoCoin?.name {
             coinName.text = name
+            coinImage.downloadedFrom(link: "https://www.cryptocompare.com" + cryptoCoin.imageUrl)
         }
         
         // Set our price data
@@ -41,17 +43,7 @@ class CoinDetailViewController: CryptoCompareViewController{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        switch segue.identifier {
-//        case "didAddProject"?:
-//            //project = Project(name: nameField.text!, color: colorView.backgroundColor!)
-//        case "didEditProject"?:
-//            try! Realm().write {
-//                project!.name = nameField.text!
-//                project!.color = colorView.backgroundColor!
-//            }
-//        default:
-//            fatalError("Unknown segue")
-//        }
+        
     }
     
     @IBAction func setPriceData(){

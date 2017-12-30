@@ -14,9 +14,7 @@ class MainViewController: UIViewController{
     
     private var cryptoPriceTask: URLSessionTask?
     
-    let currencyArray = ["AUD", "BRL","CAD","CNY","EUR","GBP","HKD","IDR","ILS","INR","JPY","MXN","NOK","NZD","PLN","RON","RUB","SEK","SGD","USD","ZAR"]
-    var finalURL = ""
-    
+    var currentRow : Int = 0
     var currency : Currency = Currency()
     
     
@@ -24,9 +22,11 @@ class MainViewController: UIViewController{
     @IBOutlet weak var currencyPicker: UIPickerView!
     
     private var cryptoPrice: CryptoPrice? {
+        
+        // If cryptoprice changed, update cryptopricelabel text
         didSet {
             if let cryptoPrice = cryptoPrice {
-                cryptoPriceLabel.text = "\(cryptoPrice.last)℃"
+                cryptoPriceLabel.text = "\(cryptoPrice.last) \(currency.currencyArray[currentRow])"
             } else {
                 cryptoPriceLabel.text = "Loading"
             }
@@ -37,12 +37,6 @@ class MainViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        //currencyPicker.dataSource = self
-        //currencyPicker.delegate = self
-        
-        //let statusIndex = Task.Status.values.index(of: task.status)!
-        //currencyPicker.selectRow(0, inComponent: 0, animated: false)
         
     }
 
@@ -70,16 +64,10 @@ class MainViewController: UIViewController{
         
         func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
             return currency.currencyArray[row]
-            
-            
-            //return currencyArray[row]
         }
         
         func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-            //let finalUrl = baseURL + currency.currencyArray[row]
-            
-            print(row)
-            
+            currentRow = row
             cryptoPrice = nil
             cryptoPriceTask?.cancel()
             cryptoPriceTask = CryptocurrencyPriceService.price(for: currency.currencyArray[row]) {

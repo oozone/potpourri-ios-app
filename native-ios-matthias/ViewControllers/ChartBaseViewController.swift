@@ -9,6 +9,8 @@
 import UIKit
 import Charts
 
+// Source: https://github.com/danielgindi/Charts/blob/master/ChartsDemo/Swift/DemoBaseViewController.swift
+
 enum Option {
     case toggleValues
     case toggleIcons

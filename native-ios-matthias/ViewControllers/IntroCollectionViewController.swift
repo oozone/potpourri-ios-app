@@ -20,7 +20,7 @@ class IntroCollectionViewController: UICollectionViewController, UIGestureRecogn
         super.viewDidLoad()
 
         categories.append(Category(title: "CryptoCoin", icon: "💸", segue: "cryptoSegue", info: "Check cryptocoin prices"))
-        categories.append(Category(title: "Converter", icon: "⚖️", segue: "converterSegue", info: "Convert cryptocoin"))
+        categories.append(Category(title: "Bitcoin Converter", icon: "⚖️", segue: "converterSegue", info: "Convert bitcoin in different currencies"))
         categories.append(Category(title: "Relax", icon: "🐰", segue: "relaxSegue", info: "Relax with some radio"))
         categories.append(Category(title: "Map", icon: "🌎", segue: "mapSegue", info: "Map View Showboating"))
         
@@ -79,7 +79,7 @@ class IntroCollectionViewController: UICollectionViewController, UIGestureRecogn
             let cat = categories[position.row]
             
             // Source: https://stackoverflow.com/questions/24022479/how-would-i-create-a-uialertview-in-swift
-            let alert = UIAlertController(title: cat.title, message: "Test", preferredStyle: UIAlertControllerStyle.alert)
+            let alert = UIAlertController(title: cat.title, message: cat.info, preferredStyle: UIAlertControllerStyle.alert)
             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
             
             alert.addAction(okAction)

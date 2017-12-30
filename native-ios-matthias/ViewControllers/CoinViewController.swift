@@ -25,20 +25,19 @@ class CoinViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        // Load our coins in tableview
         cryptoCoins = nil
         cryptoCoinTask?.cancel()
         cryptoCoinTask = CryptocompareService.coinlist() {
             self.cryptoCoins = $0
+            
+            // Reload table data
             self.tableView!.reloadData()
-            //self.view
         }
         cryptoCoinTask!.resume()
         
-        
-    
-        
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -49,7 +48,8 @@ class CoinViewController: UIViewController{
 
         switch  segue.identifier {
         case "detailCoin"?:
-
+            
+            // Set selected cryptocoin to destination controller
             let dest = segue.destination as! CoinDetailTabController
             let selection = tableView.indexPathForSelectedRow!
             dest.cryptoCoin = self.cryptoCoins[selection.row]
@@ -59,21 +59,6 @@ class CoinViewController: UIViewController{
         }
     }
     
-    @IBAction func unwindFromDetailCoin(_ segue: UIStoryboardSegue) {
-//        switch segue.identifier {
-//        case "didAddProject"?:
-//            let addProjectViewController = segue.source as! AddProjectViewController
-//            let realm = try! Realm()
-//            try! realm.write {
-//                realm.add(addProjectViewController.project!)
-//            }
-//            tableView.insertRows(at: [IndexPath(row: projects.count - 1, section: 0)], with: .automatic)
-//        case "didEditProject"?:
-//            tableView.reloadRows(at: [indexPathToEdit], with: .automatic)
-//        default:
-//            fatalError("Unkown segue")
-//        }
-    }
     
     
 }
@@ -87,14 +72,17 @@ extension CoinViewController: UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        // Only get 20 coins, the list is looooong!!!
         return 20
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        // Set our cryptocell name & imageicon
         let cell = tableView.dequeueReusableCell(withIdentifier: "cryptoCell", for: indexPath) as! CryptoCell
-        //cell.project = projects[indexPath.row]
         if let wr = cryptoCoins?[indexPath.row]  {
-            cell.name = wr.name
+            cell.name = wr.fullname
             cell.imageIcon = "https://www.cryptocompare.com" + wr.imageUrl
         } else {
             cell.name = "N/A"
@@ -107,27 +95,6 @@ extension CoinViewController: UITableViewDataSource {
 
 extension CoinViewController: UITableViewDelegate {
     
-//    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-//        let editAction = UIContextualAction(style: .normal, title: "Edit") {
-//            (action, view, completionHandler) in
-//            self.indexPathToEdit = indexPath
-//            self.performSegue(withIdentifier: "editProject", sender: self)
-//            completionHandler(true)
-//        }
-//        editAction.backgroundColor = UIColor.orange
-//        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") {
-//            (action, view, completionHandler) in
-//            let project = self.projects[indexPath.row]
-//            let realm = try! Realm()
-//            try! realm.write {
-//                project.tasks.forEach(realm.delete(_:))
-//                realm.delete(project)
-//            }
-//            tableView.deleteRows(at: [indexPath], with: .automatic)
-//            completionHandler(true)
-//        }
-//        return UISwipeActionsConfiguration(actions: [deleteAction, editAction])
-//    }
 }
 
 

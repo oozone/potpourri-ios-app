@@ -13,11 +13,10 @@ import CoreLocation
 class MapViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
-    var locManager = CLLocationManager()
-    //var hogentLocation2D: CLLocationCoordinate2D = CLLocationCoordinate2D()
-    var hogentLocation: CLLocation = CLLocation()
-    
     @IBOutlet weak var distanceLabel: UILabel!
+    
+    var locManager = CLLocationManager()
+    var hogentLocation: CLLocation = CLLocation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +26,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         let long: CLLocationDegrees = 3.699018
         let longDelta: CLLocationDegrees = 0.005
         let latDelta = longDelta
-        
-        
         let coordinateSpan: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
-        //hogentLocation2D = CLLocationCoordinate2D(latitude: lat, longitude: long)
         hogentLocation = CLLocation(latitude: lat,longitude: long)
         
+        // Setup our map
         let coordinateRegion: MKCoordinateRegion = MKCoordinateRegion(center: hogentLocation.coordinate, span: coordinateSpan)
         mapView.setRegion(coordinateRegion, animated: true)
         
@@ -40,15 +37,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         let annot = MKPointAnnotation()
         annot.title = "HoGent"
         annot.subtitle = "Hier heb ik les"
-        
         annot.coordinate = hogentLocation.coordinate
         mapView.addAnnotation(annot)
         
+        // Location Manager to get distance
         locManager.delegate = self
         locManager.desiredAccuracy = kCLLocationAccuracyBest
         locManager.requestAlwaysAuthorization()
         locManager.startUpdatingLocation()
-        
         
     }
 
@@ -57,6 +53,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    // Did update location? -> set the distance between you and hogent
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation: CLLocation = locations[0]
         
