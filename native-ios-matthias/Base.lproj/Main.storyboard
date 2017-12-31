@@ -14,6 +14,9 @@
         <array key="Avenir.ttc">
             <string>Avenir-Book</string>
         </array>
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Main View Controller-->
@@ -140,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgt-7j-Yj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1207.2" y="108.39580209895054"/>
+            <point key="canvasLocation" x="799" y="107"/>
         </scene>
         <!--Radio Player View Controller-->
         <scene sceneID="Cq4-Nz-3p2">
@@ -528,7 +531,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfb-EE-CFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationItem title="Title" id="tf5-pF-Hgl"/>
             </objects>
-            <point key="canvasLocation" x="3716" y="-187.55622188905548"/>
+            <point key="canvasLocation" x="3716" y="-725"/>
         </scene>
         <!--Price Chart-->
         <scene sceneID="Js2-QJ-mNR">
@@ -607,7 +610,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zyx-1V-Nv9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3717" y="753"/>
+            <point key="canvasLocation" x="3716" y="-18"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="I1L-Ml-86D">
+            <objects>
+                <viewController title="Info" id="VG0-25-fV6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="67K-sN-TNb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Xx-hs-C8I">
+                                <rect key="frame" x="20" y="108" width="320" height="530.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cryptocurrency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkT-gS-rjd">
+                                        <rect key="frame" x="72" y="0.0" width="176.5" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                        <color key="textColor" red="0.093285702168941498" green="0.39085999131202698" blue="0.9515421986579895" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.043393440544605255" green="0.45287662744522095" blue="0.98275834321975708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <variation key="widthClass=regular">
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="37"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL3-vw-Nud">
+                                        <rect key="frame" x="0.0" y="44.5" width="320" height="459"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="K1d-1L-fLx"/>
+                                        </constraints>
+                                        <mutableString key="text">A cryptocurrency (or crypto currency) is a digital asset designed to work as a medium of exchange that uses cryptography to secure its transactions, to control the creation of additional units, and to verify the transfer of assets. Cryptocurrencies are classified as a subset of digital currencies and are also classified as a subset of alternative currencies and virtual currencies.
+
+Bitcoin, created in 2009, was the first decentralized cryptocurrency. Since then, numerous other cryptocurrencies have been created. These are frequently called altcoins, as a blend of bitcoin alternative. Bitcoin and its derivatives use decentralized control as opposed to centralized electronic money/central banking systems. The decentralized control is related to the use of bitcoin's blockchain transaction database in the role of a distributed ledger.</mutableString>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <mutableString key="userLabel">A cryptocurrency (or crypto currency) is a digital asset designed to work as a medium of exchange that uses cryptography to secure its transactions, to control the creation of additional units, and to verify the transfer of assets.[1][2][3] Cryptocurrencies are classified as a subset of digital currencies and are also classified as a subset of alternative currencies and virtual currencies.  Bitcoin, created in 2009, was the first decentralized cryptocurrency.[4] Since then, numerous other cryptocurrencies have been created.[5] These are frequently called altcoins, as a blend of bitcoin alternative.[6][7][8] Bitcoin and its derivatives use decentralized control[9] as opposed to centralized electronic money/central banking systems.[10] The decentralized control is related to the use of bitcoin's blockchain transaction database in the role of a distributed ledger.[11]</mutableString>
+                                        <variation key="widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from: Wikipedia.org" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhf-Uo-x0s">
+                                        <rect key="frame" x="97" y="513.5" width="126.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cL3-vw-Nud" firstAttribute="leading" secondItem="5Xx-hs-C8I" secondAttribute="leading" id="H7L-JE-imY"/>
+                                    <constraint firstAttribute="trailing" secondItem="cL3-vw-Nud" secondAttribute="trailing" id="axy-Ft-MSi"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MkT-gS-rjd" firstAttribute="centerX" secondItem="Awm-hH-5wM" secondAttribute="centerX" id="41L-CT-pcA"/>
+                            <constraint firstItem="5Xx-hs-C8I" firstAttribute="centerX" secondItem="Awm-hH-5wM" secondAttribute="centerX" id="8sR-xE-Dk8"/>
+                            <constraint firstItem="5Xx-hs-C8I" firstAttribute="top" secondItem="Awm-hH-5wM" secondAttribute="top" id="Hdt-zL-vlw"/>
+                            <constraint firstItem="Awm-hH-5wM" firstAttribute="trailing" secondItem="5Xx-hs-C8I" secondAttribute="trailing" constant="20" id="NYc-zQ-MBW"/>
+                            <constraint firstItem="5Xx-hs-C8I" firstAttribute="leading" secondItem="Awm-hH-5wM" secondAttribute="leading" constant="20" id="XIe-CF-a6U"/>
+                            <constraint firstItem="bhf-Uo-x0s" firstAttribute="centerX" secondItem="Awm-hH-5wM" secondAttribute="centerX" id="aSC-1r-82c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Awm-hH-5wM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GNV-2y-gbq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8vN-2X-IAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3716" y="700"/>
         </scene>
         <!--Coin Detail Tab Controller-->
         <scene sceneID="8aZ-rE-3yH">
@@ -621,11 +690,12 @@
                     <connections>
                         <segue destination="iGc-3O-sRm" kind="relationship" relationship="viewControllers" id="5Nb-iB-x6P"/>
                         <segue destination="Xtw-uz-dnp" kind="relationship" relationship="viewControllers" id="LbU-Sm-mJe"/>
+                        <segue destination="Idn-Pp-ftN" kind="relationship" relationship="viewControllers" id="92s-cU-SZy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yoo-gg-4vA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="107.49625187406298"/>
+            <point key="canvasLocation" x="1668" y="107"/>
         </scene>
         <!--Coin Price-->
         <scene sceneID="5qA-Lr-vfD">
@@ -644,7 +714,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iK5-YM-tdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2926" y="-183"/>
+            <point key="canvasLocation" x="2926" y="-724"/>
         </scene>
         <!--Price Chart-->
         <scene sceneID="5YX-ZA-bsz">
@@ -663,7 +733,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdG-pe-D6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2925.5999999999999" y="588.75562218890559"/>
+            <point key="canvasLocation" x="2926" y="-17"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Aqp-Sk-QXY">
@@ -682,6 +752,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hk8-Kn-tBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2150" y="1489"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="Ouk-KC-WnU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Idn-Pp-ftN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Info" id="9j4-uH-tuj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="02o-U0-id9">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VG0-25-fV6" kind="relationship" relationship="rootViewController" id="OMO-bh-CV8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCg-Ik-f6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2926" y="701"/>
         </scene>
     </scenes>
     <resources>
