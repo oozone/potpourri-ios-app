@@ -13,6 +13,7 @@ In the Potpourri app you can
 - Calculate the distance from your current position to the HoGent campus
 
 ### Implemented requirements
+- Swift programming language
 - Model-View-Controller & Delegation
 - UINavigationController: multiple
 - UITabBarController: CryptoCoin section
@@ -23,5 +24,8 @@ In the Potpourri app you can
 ### Extras
 - Core Location / Maps: Maps section
 - ios-charts: CryptoCoin chart
+
+### Running the app
+Clone the repository and run the command `pod install` (https://cocoapods.org/) in the cloned folder. That should do it!
 
 Made by **Matthias Vanooteghem** for Hogeschool Gent 2017-2018.
