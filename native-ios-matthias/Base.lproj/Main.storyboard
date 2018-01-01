@@ -205,13 +205,10 @@
                                 <rect key="frame" x="0.0" y="170" width="375" height="497"/>
                             </mapView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSL-0v-waF">
-                                <rect key="frame" x="16" y="112" width="213" height="20.5"/>
+                                <rect key="frame" x="16" y="112" width="212.5" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your distance from HoGent:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWC-46-ZxK">
-                                        <rect key="frame" x="0.0" y="0.0" width="213" height="20.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="213" id="SFE-fX-Fje"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="212.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -407,10 +404,10 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vg3-Zp-FVM" userLabel="EURlabel">
-                                <rect key="frame" x="20" y="460" width="42" height="27"/>
+                                <rect key="frame" x="20" y="460" width="300" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="Qtk-jh-7KK"/>
-                                    <constraint firstAttribute="width" constant="42" id="cPs-7W-Vki"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="cPs-7W-Vki"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -425,20 +422,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCE-7E-AcT">
-                                <rect key="frame" x="70" y="463" width="258" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCE-7E-AcT">
+                                <rect key="frame" x="328" y="463" width="0.0" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zt8-8b-yDe" userLabel="EURlabel">
-                                <rect key="frame" x="338" y="508" width="43" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zt8-8b-yDe" userLabel="EURlabel">
+                                <rect key="frame" x="338" y="508" width="43" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bus-l3-Yga" userLabel="EURlabel">
-                                <rect key="frame" x="20" y="506" width="42" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bus-l3-Yga" userLabel="EURlabel">
+                                <rect key="frame" x="20" y="506" width="300" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -483,7 +480,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvf-zE-WEy">
-                                <rect key="frame" x="70" y="504" width="258" height="23.5"/>
+                                <rect key="frame" x="328" y="504" width="0.0" height="23.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -504,8 +501,9 @@
                             <constraint firstItem="65w-Fx-lWm" firstAttribute="centerX" secondItem="1Sm-Ob-KYp" secondAttribute="centerX" id="L2b-jh-wQg"/>
                             <constraint firstItem="1Sm-Ob-KYp" firstAttribute="leading" secondItem="iTA-Z3-Jmq" secondAttribute="leading" id="NJa-03-uik"/>
                             <constraint firstItem="S1j-3w-7Y8" firstAttribute="leading" secondItem="Zt8-8b-yDe" secondAttribute="leading" id="OWz-3g-B5K"/>
-                            <constraint firstItem="bvf-zE-WEy" firstAttribute="leading" secondItem="cCE-7E-AcT" secondAttribute="leading" id="PIY-XT-mDq"/>
+                            <constraint firstItem="bvf-zE-WEy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cCE-7E-AcT" secondAttribute="leading" id="PIY-XT-mDq"/>
                             <constraint firstItem="S1j-3w-7Y8" firstAttribute="top" secondItem="cCE-7E-AcT" secondAttribute="top" id="PTw-Ao-jp6"/>
+                            <constraint firstAttribute="trailing" secondItem="bvf-zE-WEy" secondAttribute="trailing" constant="47" id="Qp9-hW-zJN"/>
                             <constraint firstItem="bvf-zE-WEy" firstAttribute="top" secondItem="cCE-7E-AcT" secondAttribute="bottom" constant="18" id="Qs9-PX-3lU"/>
                             <constraint firstItem="bvf-zE-WEy" firstAttribute="width" secondItem="cCE-7E-AcT" secondAttribute="width" id="SPP-vr-RuP"/>
                             <constraint firstItem="BZd-4g-0kp" firstAttribute="top" secondItem="1Sm-Ob-KYp" secondAttribute="bottom" constant="31" id="VUj-za-M35"/>
