@@ -15,6 +15,7 @@ In the Potpourri app you can
 ### Implemented requirements
 - Swift programming language
 - Model-View-Controller & Delegation
+- Auto Layout, Size Classes and UIStackView
 - UINavigationController: multiple
 - UITabBarController: CryptoCoin section
 - UISplitViewController: Relax section
