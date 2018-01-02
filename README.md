@@ -26,6 +26,6 @@ In the Potpourri app you can
 - ios-charts: CryptoCoin chart
 
 ### Running the app
-Clone the repository and run the command `pod install` (https://cocoapods.org/) in the cloned folder. That should do it!
+Clone the repository and run the command `pod install` (https://cocoapods.org/) in the cloned folder. Make sure to open the workspace-file and run the app. That should do it!
 
 Made by **Matthias Vanooteghem** for Hogeschool Gent 2017-2018.
