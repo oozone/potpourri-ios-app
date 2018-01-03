@@ -38,3 +38,6 @@ Clone the repository and run the command `pod install` (https://cocoapods.org/) 
 ![9.jpg](http://voom.be:12005/images/ios/9.jpg "9")
 
 Made by **Matthias Vanooteghem** for Hogeschool Gent 2017-2018.
+
+### License
+This repository / app is provided as-is under the MIT-license
