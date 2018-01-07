@@ -5,6 +5,9 @@ iOS app for Native Apps iOS HoGent
 
 This is a demonstration iOS-app I made for the course Native Apps iOS at HoGent.
 
+### Synopsis
+With the Potpourri-app you can get the current price for various cryptocoins, convert Bitcoin to various currencies, play IFM radio and calculate your distance from the HoGent-campus.
+
 ### Functionality
 In the Potpourri app you can
 - Get the current real-time price for selected cryptocoins (Flash, BTD, ...) and see a cool chart
